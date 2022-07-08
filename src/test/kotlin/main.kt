@@ -1,9 +1,7 @@
 
 fun main() {
-    // Задача №1 - Денежные переводы
-    val amount = 10_000_00
-    println("Сумма перевода: " + amount / 100 + " руб. " + amount % 100 + " коп.")
-
-    val comission = if (amount * 75 / 10000 >= 3500) amount * 75 / 10000 else 3500
-    println("Сумма комиссии составит: " + comission / 100 + " руб. " + comission % 100 + " коп.")
+    // Задача №2 - Люди/Человеки
+    val likes = 109
+    val txt = if ((likes % 10 == 1)  && (likes != 11) && (likes % 100 != 11)) "человеку" else "людям"
+    println("Понравилось $likes " + txt)
 }
